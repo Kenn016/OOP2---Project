@@ -1,4 +1,4 @@
-Restaurant Management System
+# Restaurant Management System
 
 Project Overview
 - This project is a Restaurant Management System developed using MAUI for desktop applications. The system integrates with a database to manage customers, employees, menu items, orders, reservations, billing, and payments efficiently. It helps restaurants streamline their operations, providing an easy-to-use interface for both staff and customers. The system allows users to make reservations, place orders, manage bills, and process payments, all with a simple and responsive UI.
