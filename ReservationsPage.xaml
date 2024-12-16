@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:RestaurantMaster"
+             x:Class="RestaurantMaster.ReservationsPage">
+
+    <VerticalStackLayout Padding="20" Spacing="20">
+
+		<!-- Header Section -->
+		<Label Text="Make a Reservation"
+               FontSize="32"
+               HorizontalOptions="Center"
+               VerticalOptions="Start" />
+
+		<!-- Entry to input reservation details -->
+		<Label Text="Customer Name:" />
+		<Entry x:Name="CustomerNameEntry" Placeholder="Enter customer name" />
+
+		<Label Text="Reservation Date:" />
+		<DatePicker x:Name="ReservationDatePicker" />
+
+		<Label Text="Number of People:" />
+		<Entry x:Name="NumberOfPeopleEntry" Placeholder="Enter number of people" Keyboard="Numeric" />
+
+		<!-- Button to create reservation -->
+		<Button Text="Create Reservation"
+                FontSize="18"
+                HorizontalOptions="Center"
+                VerticalOptions="Start"
+                Clicked="OnCreateReservationClicked" />
+
+		<!-- Button to view reservations -->
+		<Button Text="View Reservations"
+                FontSize="18"
+                HorizontalOptions="Center"
+                VerticalOptions="Start"
+                Clicked="OnViewReservationsClicked" />
+	</VerticalStackLayout>
+</ContentPage>

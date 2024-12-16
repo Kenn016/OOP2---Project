@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+			 xmlns:local="clr-namespace:RestaurantMaster"
+             x:Class="RestaurantMaster.OrdersMenuPage">
+
+    <VerticalStackLayout Padding="20" Spacing="20">
+
+        <!-- Header Section -->
+        <Label Text="Manage Orders and Menu"
+               FontSize="32"
+               HorizontalOptions="Center"
+               VerticalOptions="Start" />
+
+        <!-- Button to view menu -->
+        <Button Text="View Menu"
+                FontSize="18"
+                HorizontalOptions="Center"
+                VerticalOptions="Start"
+                Clicked="OnViewMenuClicked" />
+
+        <!-- Button to place order -->
+        <Button Text="Place Order"
+                FontSize="18"
+                HorizontalOptions="Center"
+                VerticalOptions="Start"
+                Clicked="OnPlaceOrderClicked" />
+
+        <!-- Placeholder for order information -->
+        <Label Text="Order details will be displayed here."
+               FontSize="14"
+               HorizontalOptions="Center"
+               VerticalOptions="EndAndExpand" />
+
+    </VerticalStackLayout>
+</ContentPage>

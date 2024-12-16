@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:local="clr-namespace:RestaurantMaster"
+       x:Class="RestaurantMaster.AppShell">
+
+    <!-- Flyout Header -->
+    <Shell.FlyoutHeader>
+        <StackLayout Padding="20">
+            <Label Text="Restaurant Management"
+                   FontSize="24"
+                   HorizontalOptions="Center" />
+            <Label Text="Manage your restaurant efficiently"
+                   FontSize="14"
+                   HorizontalOptions="Center" />
+        </StackLayout>
+    </Shell.FlyoutHeader>
+
+    <!-- Flyout Menu Items -->
+    <FlyoutItem Title="Home" Icon="home.png">
+        <ShellContent ContentTemplate="{DataTemplate local:MainPage}" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Make Reservations" Icon="reservation.png">
+        <ShellContent ContentTemplate="{DataTemplate local:ReservationsPage}" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Orders" Icon="orders.png">
+        <ShellContent ContentTemplate="{DataTemplate local:OrdersMenuPage}" />
+    </FlyoutItem>
+
+</Shell>
